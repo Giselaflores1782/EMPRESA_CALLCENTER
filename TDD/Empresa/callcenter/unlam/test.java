@@ -14,5 +14,5 @@ public class test {
 				"Tapalque 230",1706,Localidad.Haedo,Provincia.BUENOSAIRES);
 		assertNotNull(contacto1);
 	}
-
+// git no te banco
 }
