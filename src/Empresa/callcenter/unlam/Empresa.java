@@ -40,6 +40,9 @@ public class Empresa {
 			this.contacto[agendaContacto++]=nuevoContacto;
 			
 		}
+		
+	
+		
 	
 		}
 
