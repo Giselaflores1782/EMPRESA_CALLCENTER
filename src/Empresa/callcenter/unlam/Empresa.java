@@ -36,9 +36,20 @@ public class Empresa {
 		return contac;
 	}
 	public void  agregarContacto(Contacto nuevoContacto) {
-		this.contacto[agendaContacto++]=nuevoContacto;
+		if(getAgendaContacto()< contacto.length) {
+			this.contacto[agendaContacto++]=nuevoContacto;
+			
+		}
 	
 		}
+
+	public Integer getAgendaContacto() {
+		return agendaContacto;
+	}
+
+	public void setAgendaContacto(Integer agendaContacto) {
+		this.agendaContacto = agendaContacto;
+	}
 
 	public String getNombre() {
 		return nombre;

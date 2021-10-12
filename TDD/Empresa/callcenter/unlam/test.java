@@ -31,8 +31,8 @@ public class test {
 		empresa1.agregarContacto(contacto2);
 		empresa1.agregarContacto(contacto3);
 		
-		Contacto valorEsperado = contacto1;
-		Contacto valorObtenido = empresa1.realizarNuevaLlamada("Cintia Pinaud");
+		Contacto valorEsperado = contacto2;
+		Contacto valorObtenido = empresa1.realizarNuevaLlamada("Nadia Corvini");
 		
 		assertEquals(valorEsperado, valorObtenido);
 
