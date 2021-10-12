@@ -79,6 +79,13 @@ public class Contacto {
 	public void setProvincia(Provincia provincia) {
 		this.provincia = provincia;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Contacto [nombre=" + nombre + ", celular=" + celular + ", email=" + email + ", direccion=" + direccion
+				+ ", localidad=" + localidad + ", provincia=" + provincia + "]";
+	}
 	
 	
 	

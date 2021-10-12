@@ -5,17 +5,40 @@ public class Empresa {
 	private String nombre;
 	private Contacto[] contacto;
 	private Integer [] cPValido;
+	private Integer agendaContacto;
 	
 	public Empresa(String nombre, Contacto[] contactos, Integer[] cPValido) {
 		this.nombre= nombre;
 		this.contacto= new Contacto[10];
 		this.cPValido= new Integer[10];
+		this.agendaContacto=0;
+	}
+	
+	public Empresa(String nombre, Integer[] cPValido) {
+		this.nombre= nombre;
+		this.contacto= new Contacto[10];
+		this.cPValido= new Integer[10];
+		this.agendaContacto=0;
 	}
 
 	public Contacto realizarNuevaLlamada(String contactoLlamada) {
-		// TODO Auto-generated method stub
-		return null;
+		Contacto contac= null ;
+			
+		for (int i = 0; i < agendaContacto; i++) {
+			if(contacto[i].getNombre() == contactoLlamada) {
+				contac= contacto[i];
+				
+			}
+			
+			
+		}
+		
+		return contac;
 	}
+	public void  agregarContacto(Contacto nuevoContacto) {
+		this.contacto[agendaContacto++]=nuevoContacto;
+	
+		}
 
 	public String getNombre() {
 		return nombre;
